@@ -1,0 +1,8 @@
+---
+- name: Prove we can do stuff as root
+  hosts: all
+  become: true
+  tasks:
+  - name: Touch a file in the root homedir
+    command: touch /root/hellfrom{{ ansible_date_time.epoch }}
+    
