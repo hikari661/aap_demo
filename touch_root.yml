@@ -4,5 +4,5 @@
   become: true
   tasks:
   - name: Touch a file in the root homedir
-    command: touch /root/this_was_made_using_approle.{{ ansible_date_time.epoch }}
+    command: touch /root/touched_by_root.{{ ansible_date_time.epoch }}
     
