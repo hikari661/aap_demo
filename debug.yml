@@ -7,5 +7,5 @@
   tasks:
   - name: debug vars
     debug: 
-      vars: ansible_hashi_vault_password
+      var: ansible_hashi_vault_password
     
