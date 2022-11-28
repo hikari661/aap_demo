@@ -1,0 +1,11 @@
+
+
+---
+- name: debug stuff
+  hosts: localhost
+  become: true
+  tasks:
+  - name: debug vars
+    debug: 
+      vars: ansible_hashi_vault_password
+    
