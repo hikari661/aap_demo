@@ -1,7 +1,6 @@
 ---
 - name: restart windows print spooler
   hosts: all
-  become: true
   tasks:
   
   - name: Set service startup mode to auto and ensure it is started
