@@ -5,7 +5,12 @@
   hosts: localhost
   become: true
   tasks:
-  - name: debug vars
-    debug: 
-      msg: "{{lookup('community.hashi_vault.vault_read', 'ad/creds/test_role', auth_method='userpass', url=ansible_hashi_vault_addr, username=ansible_hashi_vault_username, password=ansible_hashi_vault_password)['data']['current_password']}}"
+  - name: run setup
+    setup:
+      
+  
+  
+  #- name: debug vars
+  #  debug: 
+  #    msg: "{{lookup('community.hashi_vault.vault_read', 'ad/creds/test_role', auth_method='userpass', url=ansible_hashi_vault_addr, username=ansible_hashi_vault_username, password=ansible_hashi_vault_password)['data']['current_password']}}"
     
