@@ -1,0 +1,13 @@
+- name: test cred rotatoin
+  hosts: dc1
+  tasks:
+  
+  - name: Ensure user bob is created and use custom credentials to create the user
+    community.windows.win_domain_user:
+      name: demo
+      firstname: demo
+      password: Password2
+      state: present
+      domain_username: aap2\azureuser
+      domain_password: ReallyBadPassword1234!
+      domain_server: dc1@aap2.local
