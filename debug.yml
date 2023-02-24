@@ -2,68 +2,10 @@
 
 ---
 - name: debug stuff
-  hosts: localhost
+  hosts: all
   become: true
   tasks:
-  - name: run setup
-    setup:
-      
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
   
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-      
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-  
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-  
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
-
-  - name: Pause for 15 seconds
-    ansible.builtin.pause:
-      seconds: 15
+  - name: debug ssh password
+    debug:
+      var: ansible_ssh_password
