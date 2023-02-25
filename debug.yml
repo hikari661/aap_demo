@@ -14,4 +14,4 @@
       var: ansible_user      
   - name: debug ssh password
     debug:
-      var: ansible_password
+      var: ansible_ssh_password
