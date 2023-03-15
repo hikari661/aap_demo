@@ -2,6 +2,14 @@
 - name: debug stuff
   hosts: testbox1
   become: true
+  roles:
+    - rhel-system-roles.kernel_settings
+  vars:
+    kernel_settings_sysctl:
+      - name: fs.file-max
+        value: 400000
+      - name: kernel.threads-max
+        value: 65536
   tasks:
 
   - name: Extend the logical volume to consume all remaining space in the volume group
