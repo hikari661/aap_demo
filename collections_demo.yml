@@ -1,0 +1,12 @@
+---
+- name: debug stuff
+  hosts: testbox1
+  become: true
+  tasks:
+
+  - name: Extend the logical volume to consume all remaining space in the volume group
+    community.general.lvol:
+      vg: rootvg
+      lv: rootlv
+      size: +100%FREE
+

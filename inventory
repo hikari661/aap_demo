@@ -1,0 +1,1 @@
+testbox1 ansible_ssh_private_key_file=files/id_ssh_rsa
