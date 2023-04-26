@@ -1,5 +1,5 @@
 ---
-collections:
-  - name: community.general
-  - name: redhat.rhel_system_roles
-  - name: redhat.rhv
+#collections:
+ # - name: community.general
+ # - name: redhat.rhel_system_roles
+ # - name: redhat.rhv
