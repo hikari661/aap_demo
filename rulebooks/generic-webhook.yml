@@ -10,5 +10,6 @@
   - name: Run gather facts job
     condition: event.payloadi.message == "Gather some facts!" 
     action:
-      run_playbook:
-        name: playbooks/gather_facts.yml
+      run_job_template:
+        name: 'Gather facts'
+        organization: Default
