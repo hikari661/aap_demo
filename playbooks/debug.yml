@@ -1,0 +1,9 @@
+---
+- name: Display a message
+  hosts: localhost
+  become: true
+  tasks:
+  
+  - name: Display a message
+    debug:
+      msg: "Hello!"

@@ -1,8 +1,0 @@
----
-- name: gather facts
-  hosts: all
-  become: true
-  tasks:
-  
-  - name: run setup
-    setup:
